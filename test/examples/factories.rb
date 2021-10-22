@@ -315,7 +315,7 @@ module Archimate
       ########################################################
 
       def build_id
-        Faker::Number.hexadecimal(8)
+        Faker::Number.hexadecimal(digits: 8)
       end
 
       def fetch_or_fake_id(options = {})

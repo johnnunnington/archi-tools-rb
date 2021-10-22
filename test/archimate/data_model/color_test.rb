@@ -33,7 +33,7 @@ module Archimate
       end
 
       def test_operator_eqleql_true
-        assert_equal @c1, Color.new(@c1.to_h)
+        assert_equal @c1, Color.new(**(@c1.to_h))
       end
 
       def test_operator_eqleql_false
