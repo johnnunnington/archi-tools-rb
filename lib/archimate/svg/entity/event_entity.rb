@@ -41,10 +41,10 @@ module Archimate
         def calc_event_text_bounds(notch_x)
           bounds = @text_bounds
           @text_bounds = DataModel::Bounds.new(
-            bounds.to_h.merge(
+            **(bounds.to_h.merge(
               x: bounds.left + notch_x * 0.80,
               width: bounds.width - notch_x
-            )
+            ))
           )
         end
       end

@@ -761,6 +761,18 @@ module Archimate
         end
       end
 
+      class ValueStream < Element
+        NAME = "Value Stream"
+        DESCRIPTION = "A value stream represents a set of actions that add value to a customer from the initial request to realization by the customer."
+        CLASSIFICATION = :active_structure
+        LAYER = Layers::Strategy
+
+        def initialize(args)
+          super
+        end
+      end
+
+
       #############################################################
       # Other Layer
       #############################################################

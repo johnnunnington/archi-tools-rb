@@ -13,9 +13,9 @@ module Archimate
             [
               event(
                 event_name,
-                DataModel::Color.new(
+                DataModel::Color.new( **(
                   %w[r g b a].each_with_object({}) { |attr, hash| hash[attr.to_sym] = attrs[attr]&.to_i }
-                )
+                ))
               )
             ]
           end

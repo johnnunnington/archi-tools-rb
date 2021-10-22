@@ -147,7 +147,7 @@ module Archimate
         el = parent
         while el.respond_to?(:bounds) && el.bounds
           bounds = el.bounds
-          offset = Bounds.new(offset.to_h.merge(x: (offset.x || 0) + (bounds.x || 0), y: (offset.y || 0) + (bounds.y || 0)))
+          offset = Bounds.new(**(offset.to_h.merge(x: (offset.x || 0) + (bounds.x || 0), y: (offset.y || 0) + (bounds.y || 0))))
           el = el.parent
         end
         offset

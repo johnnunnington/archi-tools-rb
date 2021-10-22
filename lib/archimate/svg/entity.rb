@@ -88,6 +88,7 @@ module Archimate
       autoload :TechnologyProcess, 'archimate/svg/entity/technology_process'
       autoload :TechnologyService, 'archimate/svg/entity/technology_service'
       autoload :Value, 'archimate/svg/entity/value'
+      autoload :ValueStream, 'archimate/svg/entity/value_stream'
       autoload :WorkPackage, 'archimate/svg/entity/work_package'
     end
   end

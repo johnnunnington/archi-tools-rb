@@ -76,7 +76,7 @@ module Archimate
         properties.each do |property|
           # TODO: if we want to be slick here, keep a set of property values and point to that instead
           prop_id = next_prop_id
-          node(xml, prop_id, property.key, "Property", "property-value" => property.value)
+          node( xml, prop_id, property.key, "Property", "property-value" => property.value)
           edge(xml, next_edge_id, source_id, prop_id, "HasProperty", property.key)
         end
       end
