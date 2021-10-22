@@ -54,7 +54,7 @@ module Archimate
           ["1|Times New Roman|12.0|3|WINDOWS|1|-16|0|0|0|700|-1|0|0|0|3|2|1|18|Times New Roman", "Times New Roman", 12.0, 3],
         ].each do |fd, name, size, style|
           assert_equal(
-            Font.new(name: name, size: size, style: style, font_data: fd),
+            Font.new( name: name, size: size, style: style, font_data: fd),
             Font.archi_font_string(fd)
           )
         end

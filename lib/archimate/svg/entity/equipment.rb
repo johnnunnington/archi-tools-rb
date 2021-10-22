@@ -10,6 +10,11 @@ module Archimate
           super
           @badge = "#archimate-equipment-badge"
         end
+
+	def entity_shape(xml, bounds)
+            @badge = "#archimate-equipment-badge"
+            node_path(xml, bounds)
+        end
       end
     end
   end
