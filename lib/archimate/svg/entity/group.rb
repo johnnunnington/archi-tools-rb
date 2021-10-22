@@ -34,7 +34,7 @@ module Archimate
             height: group_header_height,
             class: "archimate-decoration"
           )
-          @text_bounds = DataModel::Bounds.new(bounds.to_h.merge(height: group_header_height))
+          @text_bounds = DataModel::Bounds.new(**(bounds.to_h.merge(height: group_header_height)))
           @text_align = "left"
         end
       end

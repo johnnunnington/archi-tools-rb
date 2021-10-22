@@ -28,7 +28,7 @@ module Archimate
             class: background_class,
             style: shape_style
           )
-          @text_bounds = DataModel::Bounds.new(bounds.to_h.merge(height: group_header_height))
+          @text_bounds = DataModel::Bounds.new(**(bounds.to_h.merge(height: group_header_height)))
           @text_align = "left"
         end
       end
