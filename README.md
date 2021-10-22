@@ -51,7 +51,8 @@ The following Archimate concepts do not render
 Concept Type| Note
 ------------|-------------
 All Sketch Views | 
-Facility | No alternative graphical representation
+Equipment | No alternative graphical representation (Fixed Friday 22nd October 2021)
+Facility | No alternative graphical representation (Fixed Friday 22nd October 2021)
 
 ## Contributing
 
